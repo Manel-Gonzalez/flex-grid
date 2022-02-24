@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 16px;
+}
+
+/* NAVBAR */
+
+.nav-bar {
+  display: grid;
+  grid-template-columns: 3.5fr 1fr;
+  height: 8vh;
+}
+.nav-bar ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  height: 5vh;
+
+  list-style-type: none;
+}
+
+.nav-bar img {
+  height: 5vh;
+}
+.nav-bar li {
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.nav-bar li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* HEADER */
+
+header {
+  background-image: url(/lab4/flex-grid/images/landing.jpeg);
+  width: 100%;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20%;
+}
+
+.img-txt {
+  color: white;
+  display: grid;
+  grid-template:
+    "myTitle myTitle myTitle"
+    ". myText .";
+  place-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.img-txt h1 {
+  font-size: 3em;
+  grid-area: myTitle;
+  margin-bottom: 5px;
+}
+
+.img-txt p {
+  width: 100%;
+  grid-area: myText;
+  margin-top: 10px;
+}
+
+/* MIDDLE SECTION */
+
+.info-section {
+  margin: 30px;
+}
+.mid-section #mid-heading {
+  text-align: center;
+  line-height: 30px;
+  text-decoration-color: #00b172;
+  text-decoration-line: underline;
+  text-underline-offset: 8px;
+}
+
+.mid-section .icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
+
+.icons {
+  margin-top: 50px;
+  align-items: baseline;
+}
+
+.icons h2 {
+  color: #00b172;
+  font-weight: bold;
+}
+
+.icons #left-img {
+  margin-top: 10px;
+}
+
+/* BOTTOM SECTION */
+
+.bottom-section {
+  background-color: #00b172;
+}
+
+.bottom-section {
+  margin-top: 50px;
+}
+.content-box {
+  padding: 30px;
+  height: 40vh;
+  color: white;
+}
+
+.left-art h2 {
+  text-decoration-color: white;
+  text-decoration-line: underline;
+  text-underline-offset: 8px;
+}
