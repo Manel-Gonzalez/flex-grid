@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Didact Gothic";
+}
+
+/* HEADER SECTION */
+.section-header{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-nav a{
+    text-decoration: none;
+    color: black;
+    margin: 0px 10px;
+}
+.top-nav a:hover{
+    color: #1ab26b;
+
+}
+
+.header-img{
+    background-image: url("/images/landing.jpg");
+    background-size: 100% 100% ;
+    background-repeat: no-repeat;
+    height: 600px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.titles-container{
+    color: white;
+
+}
+
+
+
+/* .header-title{
+    color: white;
+}
+
+.header-subtitle{
+    color:white;
+} */
+
+.content{
+    padding: 0px 25px;
+}
+
+/* Whats on spotify section */
+
+.section-whats-on{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+
+}
+.whats-on-title{
+    border-bottom: 2px solid #1ab26b;
+    width: fit-content;
+    align-self: center;
+    margin-bottom: 20px;
+
+}
+
+.whats-on{
+    width: 225px;
+    text-align: center;
+}
+.whats-on h4{
+    color: #1ab26b;
+}
+
+.container-whats-on{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+/* kayne west section */
+
+.section-kayne{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #1ab26b;
+    color: white;
+}
+
+.kayne-container-article{
+    display: flex;
+    flex-direction: row;
+}
+
+.spotify-logo-container{
+    height: 100%;
+
+}
+.kayne-articles{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 40vw;
+}
+
+.kayne-articles h2{
+    border-bottom: 2px solid white;
+    margin-bottom: 25px;
+}
+
+.kayne-article{
+    margin:10px 0 20px 0px;
+}
+
+/* Logos  and Images*/
+.spotify-logo{
+    width: 100px;
+    height: 100px;
+    margin-top: 25vh;
+}
+
+.kayne-img{
+    height: 400px;
+    width: 250px;
+    margin: 40px 40px 0 0;
+}
+
+.whats-on-logos{
+    width: 50px;
+    height: 50px;
+}
+
+.spotify-header-logo{
+    width: 200px;
+    height: 70px;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 720px){
+    .container-whats-on{
+        justify-content: center;
+    }
+    .spotify-logo-container{
+        display: none;
+    }
+    .section-kayne{
+        flex-direction: column;
+        align-items: center;
+    }
+    .kayne-img{
+        margin: 0;
+    }
+
+    .header-img{
+        height: 400px;
+    }
+}
