@@ -37,7 +37,7 @@ body {
 /* HEADER */
 
 header {
-  background-image: url(/lab4/flex-grid/images/landing.jpeg);
+  background-image: url(../images/landing.jpeg);
   width: 100%;
   height: 50vh;
   background-repeat: no-repeat;
@@ -112,12 +112,52 @@ header {
 }
 .content-box {
   padding: 30px;
-  height: 40vh;
   color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .left-art h2 {
   text-decoration-color: white;
   text-decoration-line: underline;
   text-underline-offset: 8px;
+}
+
+.left-art {
+  padding-bottom: 30px;
+  /* grid-area: left-art; */
+}
+
+.mid-art {
+  display: grid;
+  grid-template:
+    "."
+    "spotyLogo"
+    ".";
+  padding: 15%;
+}
+
+.mid-art img {
+  display: grid;
+  grid-area: spotyLogo;
+}
+
+.right-art {
+  place-content: center;
+}
+.right-art img {
+  width: 100%;
+  display: grid;
+}
+
+@media screen and (max-width: 770px) {
+  .content-box {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-row: 100% 100% 100%;
+  }
+
+  .right-art img {
+    z-index: 20;
+  }
 }
